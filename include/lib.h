@@ -1,6 +1,11 @@
 #ifndef LIB_H
 #define LIB_H
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <limits.h>
+
 typedef struct list
 {
     int             numb;
@@ -8,7 +13,7 @@ typedef struct list
 } t_list;
 
 void ft_error(void);
-void parse_input(char **argv, int *generate_num, int *threads_num);
-void make_prosses(int generate_num, int threads_num);
+int parse_input(char *argv);
+void make_prosses(int threads_num, int generate_num);
 
 #endif

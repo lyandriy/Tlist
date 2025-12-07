@@ -7,10 +7,11 @@ int main(int argc, char **argv)
 
     if(argc == 3)
     {
-        parse_input(argv, &generate_num, &threads_num);
+        threads_num = parse_input(argv[1]);
+        generate_num = parse_input(argv[2]);
         make_prosses(generate_num, threads_num);
     }
     else
-        ft_error();
+        ft_error("You must enter exactly two numbers.");
     return(0);
 }

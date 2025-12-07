@@ -1,6 +1,6 @@
 #include "../include/lib.h"
 
-make_prosses(int generate_num, int threads_num)
+void make_prosses(int threads_num, int generate_num)
 {
-
+    
 }

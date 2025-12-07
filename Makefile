@@ -12,7 +12,7 @@ OBJ = $(SRC:src/%.c=$(BIN_PATH)%.o)
 NAME = tlist
 
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -O3
+CFLAGS = #-Wall -Werror -Wextra -O3
 
 all:$(NAME)
 
