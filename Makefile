@@ -2,9 +2,10 @@ BIN_PATH = bin/
 
 SRC = src/main.c \
 	  src/lists.c \
-	  src/pars.c \
-	  src/threds.c \
-	  src/utils.c
+	  src/parse.c \
+	  src/threads.c \
+	  src/utils.c \
+	  src/process.c
 
 OBJ = $(SRC:src/%.c=$(BIN_PATH)%.o)
 
@@ -29,7 +30,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rm -rf $(BIN_PATH)
 
 re: fclean all
 
